@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'android' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.1
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 silly cache add args [ 'android', null ]
+6 verbose cache add spec android
+7 silly cache add parsed spec { raw: 'android',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'android',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed android@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'android', range: '*', hasData: false }
+12 silly mapToRegistry name android
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/android
+16 verbose addNameRange registry:https://registry.npmjs.org/android not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/android
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:00:12 PM
+20 verbose request id 7739ebef8af4ae0f
+21 http request GET https://registry.npmjs.org/android
+22 http 200 https://registry.npmjs.org/android
+23 silly get cb [ 200,
+23 silly get   { date: 'Thu, 26 Mar 2015 10:30:17 GMT',
+23 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"52ZSA4SI8USICE7LL6C252A94"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '5298',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-lax1426-LAX',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1427365817.540943,VS0,VE46',
+23 silly get     vary: 'Accept',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose get saving android to C:\Users\raunak\AppData\Roaming\npm-cache\registry.npmjs.org\android\.cache.json
+25 silly addNameRange number 2 { name: 'android', range: '*', hasData: true }
+26 silly addNameRange versions [ 'android',
+26 silly addNameRange   [ '0.0.0', '0.0.1', '0.0.6', '0.0.7', '0.0.5-cd' ] ]
+27 verbose addNamed android@0.0.7
+28 silly addNamed semver.valid 0.0.7
+29 silly addNamed semver.validRange 0.0.7
+30 silly mapToRegistry name android
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/android
+34 verbose addRemoteTarball https://registry.npmjs.org/android/-/android-0.0.7.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/android/-/android-0.0.7.tgz',
+35 verbose addRemoteTarball   'c7be841df0340e6bc718fc42a935b14f30c42348' ]
+36 info retry fetch attempt 1 at 4:00:13 PM
+37 info attempt registry request try #1 at 4:00:13 PM
+38 http fetch GET https://registry.npmjs.org/android/-/android-0.0.7.tgz
+39 http fetch 404 https://registry.npmjs.org/android/-/android-0.0.7.tgz
+40 error fetch failed https://registry.npmjs.org/android/-/android-0.0.7.tgz
+41 warn retry will retry, error on last attempt: Error: fetch failed with status code 404
+42 info retry fetch attempt 2 at 4:00:25 PM
+43 info attempt registry request try #1 at 4:00:25 PM
+44 http fetch GET https://registry.npmjs.org/android/-/android-0.0.7.tgz
+45 http fetch 404 https://registry.npmjs.org/android/-/android-0.0.7.tgz
+46 error fetch failed https://registry.npmjs.org/android/-/android-0.0.7.tgz
+47 warn retry will retry, error on last attempt: Error: fetch failed with status code 404
+48 info retry fetch attempt 3 at 4:01:26 PM
+49 info attempt registry request try #1 at 4:01:26 PM
+50 http fetch GET https://registry.npmjs.org/android/-/android-0.0.7.tgz
+51 http fetch 404 https://registry.npmjs.org/android/-/android-0.0.7.tgz
+52 error fetch failed https://registry.npmjs.org/android/-/android-0.0.7.tgz
+53 verbose stack Error: fetch failed with status code 404
+53 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\fetch.js:55:14)
+53 verbose stack     at Request.emit (events.js:107:17)
+53 verbose stack     at Request.onRequestResponse (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1176:10)
+53 verbose stack     at ClientRequest.emit (events.js:107:17)
+53 verbose stack     at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:419:21)
+53 verbose stack     at HTTPParser.parserOnHeadersComplete (_http_common.js:111:23)
+53 verbose stack     at TLSSocket.socketOnData (_http_client.js:310:20)
+53 verbose stack     at TLSSocket.emit (events.js:107:17)
+53 verbose stack     at readableAddChunk (_stream_readable.js:163:16)
+53 verbose stack     at TLSSocket.Readable.push (_stream_readable.js:126:10)
+54 verbose cwd G:\phonegap project files\test1\www
+55 error Windows_NT 6.3.9600
+56 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "android"
+57 error node v0.12.1
+58 error npm  v2.5.1
+59 error fetch failed with status code 404
+60 error If you need help, you may report this error at:
+60 error     <http://github.com/npm/npm/issues>
+61 verbose exit [ 1, true ]
